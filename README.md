@@ -1,5 +1,6 @@
 #   Service App
-Небольшое django-приложение, для отработки celery, redis, docker.
+Небольшое django-приложение, для отработки celery, redis, docker. \
+Создано в ходе изучения <a href="https://www.youtube.com/playlist?list=PLyaCd9XYVI9DQhzpYCNI9PAvf3U1EunVm">Курса</a>
 
 ## Установка 
 
