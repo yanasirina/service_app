@@ -8,6 +8,7 @@ services:
       - ./service:/service
     environment:
       - DB_HOST=database
+      - DB_PORT=5432
       - DB_NAME=dbname
       - DB_USER=dbuser
       - DB_PASS=pass
@@ -41,6 +42,13 @@ services:
       - redis
     depends_on:
       - redis
+      - database
+    environment:
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_NAME=dbname
+      - DB_USER=dbuser
+      - DB_PASS=pass
 
   flower:
     build:
